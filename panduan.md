@@ -49,7 +49,7 @@ list todo
 - [x] Menulis artikel 
 - [ ] Belajar Git 
 
-Inline Code (code dalamsatu baris)
+Inline Code (code dalam satu baris)
 -----------------------------------------------------
 contoh `apt update` adalah command linux
 
