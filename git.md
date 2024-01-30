@@ -79,5 +79,3 @@
 - **git fetch**
   - `git fetch` : Git fetch mengambil semua perubahan dari remote repository ke branch remote tracking lokal tanpa menggabungkannya ke dalam branch lokal atau membuat perubahan di working directory.
   - `git log HEAD..origin/nama-branch` : ini ntuk melihat perbedaan antara lokal branch dan remote branch,tanda .. di antara HEAD dan origin maksudnya oprator rentang yang di gunakan git ,berguna untuk melakukan perbandingan(ini disarankan).jika sudah yakin lakukan `git merge origin/nama-branch`
-- **SETING SSH**
-- 
