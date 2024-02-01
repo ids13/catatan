@@ -56,6 +56,8 @@
 - Penggunaan `.gitignore` untuk mengabaikan file atau direktori dari tracking.
 - **git log**
   - `git log` : melihat catatan log
+  - `git log -p` : melihat perubahannya
+  - `git log --graph` : pohon log
   - `git log --oneline` : melihat log lebih pendek (dalam satu baris)
   - `git log commithash` : melihat log bedasarkan no commit
   - `git log nama_file` : melihat log yang terjadi di file tertentu
