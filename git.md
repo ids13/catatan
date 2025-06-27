@@ -81,3 +81,35 @@
 - **git fetch**
   - `git fetch` : Git fetch mengambil semua perubahan dari remote repository ke branch remote tracking lokal tanpa menggabungkannya ke dalam branch lokal atau membuat perubahan di working directory.
   - `git log HEAD..origin/nama-branch` : ini ntuk melihat perbedaan antara lokal branch dan remote branch,tanda .. di antara HEAD dan origin maksudnya oprator rentang yang di gunakan git ,berguna untuk melakukan perbandingan(ini disarankan).jika sudah yakin lakukan `git merge origin/nama-branch`
+- **git ls-remote**
+  - git ls-remote --tags
+    manmpilkan ref ke tag
+  - git ls-remote --refs
+    menampilkan semua ref (tidak hanya branch)
+  - git ls-remote --heads
+    menampikan semua ref ke branch
+    
+menampilkan nama tag
+`git tag`
+membuat tag baru
+`git tag "versitag"`
+membuat tag di commit tertentu
+`git tag <tag_name> <commit_hash>`
+membuat anotasi di tag
+git tag -a <tag_name> -m "Annotated tag message"
+menampilkan informasi tag
+git show <tag_name>
+menghapus tag di lokal
+git tag -d <tag_name>
+menghapus tag di remote
+git push --delete origin <tag_name>
+push tag tertentu ke remote
+git push origin <tag_name>
+push semua tag ke remote
+git push --tags
+
+delete branch di remote
+git push origin --delete branch
+delete tag di remote
+git push origin --delete tag
+

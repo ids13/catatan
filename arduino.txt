@@ -1,0 +1,12 @@
+di dalam penulisan kode pin 
+- digital bisa ditulis hanya angkanya saja
+- analog harus di tuis huruf 'A' nya
+
+analog in 
+membaca nilai sensor analog (misalnya potensiometer, sensor suhu, dll)
+analogRead(pin)
+
+PWM (Pulse Width Modulation)
+Digunakan untuk mengontrol "analog output palsu"
+analogWrite(pin, nilai)
+
