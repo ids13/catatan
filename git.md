@@ -1,4 +1,9 @@
 # Pengaturan Akun Git
+pengaturan di git ada beberapa tingkatan
+- --local   : hanya untuk repository aktif
+- --global  : untuk user saat ini
+- --system  : untuk semua user
+*(jika tidak di deklarasikan maka secara default, git akan menggunakan --local)*
 ### Mengatur nama pengguna
     git config --global user.name "Nama Anda"
 ### Mengatur alamat email
