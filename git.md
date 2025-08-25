@@ -1,6 +1,5 @@
-# 📘 Git Cheatsheet
 
-## 1. Pengaturan Akun Git
+# Pengaturan Akun Git
 Git punya 3 tingkatan konfigurasi:
 - `--local` → hanya untuk repository aktif
 - `--global` → berlaku untuk user saat ini
@@ -12,37 +11,38 @@ git config --global user.email "email@anda.com" # mengatur email
 git config --list                               # melihat semua config aktif
 git config --global --list                      # melihat config global
 ```
-## Inisialisasi Repositori
+# Inisialisasi Repositori
 ```bash
 git init                          # membuat repository baru
 git clone <url_repository>        # clone repository dari remote
 ```
-## Menambahkan dan Merubah File
+# Menambahkan dan Merubah File
 ```bash
 git add nama_file                 # tambahkan file ke staging area
 git add .                         # tambahkan semua perubahan
 git commit -m "Pesan commit"      # membuat commit baru
 git commit -am "Pesan commit"     # add & commit sekaligus (untuk file yg sudah pernah ditrack)
 ```
-## Melihat dan Mengecek Status
+# Melihat dan Mengecek Status
 ```bash
 git status                        # lihat status perubahan
 git diff                          # lihat perbedaan working dir ↔ staging area
 git diff --staged                 # lihat perbedaan staging area ↔ last commit
 ```
-# Cabang (Branch)
+## Cabang (Branch)
 ```bash
-git branch                        # daftar branch
-git branch nama_cabang            # buat branch baru
-git checkout nama_cabang          # pindah branch
-git checkout -b nama_cabang       # buat + pindah branch baru
-git branch -d nama_cabang         # hapus branch lokal
+git branch                            # daftar branch
+git branch nama_cabang                # buat branch baru
+git branch -m nama_cabang             # ganti nama branch yang sedang aktif (-M untuk forece nya)
+git checkout nama_cabang              # pindah branch
+git checkout -b nama_cabang           # buat + pindah branch baru
+git branch -d nama_cabang             # hapus branch lokal
 git push origin --delete nama_cabang  # hapus branch di remote
 ```
-## Menggabungkan (Merge) Cabang
+# Menggabungkan (Merge) Cabang
 ```bash
-git checkout branch_tujuan
-git merge branch_asal             # gabungkan branch_asal → branch_tujuan
+git checkout branch_tujuan        # untuk menggabungkan harus checkout dulu (contohny : main)
+git merge branch_asal             # gabungkan branch_asal → branch_tujuan (contohnya fitur,ini akan menarih perubahan di branch fitur ke main)
 git rebase branch_tujuan          # memindahkan commit ke atas branch_tujuan
 git rebase -i HEAD~3              # interactive rebase (edit/squash commit)
 ```
